@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Que horas vou sair?</title>
+  </head>
+  <body>
+    <main>
+      <form>
+        <div class="container" style="padding-top: 2rem">
+          <h1>Que horas vou sair?</h1>
+          <h6>
+            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Calcule a hora de saída exata do
+            trabalho
+          </h6>
+          <div class="row">
+            <div class="col-sm">
+              <div class="card-body">
+                <div class="form-row">
+                  <div class="col">
+                    <label for="meta">Horas a serem cumpridas</label>
+                    <input
+                      id="meta"
+                      type="time"
+                      title="Meta de horas diárias"
+                      id="input_starttime"
+                      class="form-control"
+                      required
+                    />
+                    <hr />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col">
+                    <label for="entrada">Horario de entrada</label>
+                    <input
+                      id="entrada"
+                      type="time"
+                      title="Entrada"
+                      id="input_starttime"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                  <div class="col">
+                    <label for="almoco">Horário de saída para o almoco</label>
+                    <input
+                      id="almoco"
+                      type="time"
+                      title="Saída do almoço"
+                      id="input_starttime"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col">
+                    <hr />
+                    <label for="meta">Horário de volta do almoço</label>
+                    <input
+                      id="volta"
+                      type="time"
+                      title="Volta do almoço"
+                      id="input_starttime"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm" style="padding: 2%">
+              <button
+                onclick=""
+                class="btn btn-primary btn-lg btn-block"
+                style="height: 100%"
+              >
+                Calcular
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+      <hr />
+      <div class="container" id="alert_green" hidden="True">
+        <div
+          class="alert alert-success"
+          role="alert"
+          style="text-align: center"
+        >
+          <span id="saira_as"> Você sairá as: </span>
+
+          <span
+            id="saida"
+            class="font-weight-bold"
+            style="color: rgb(255, 255, 255)"
+          ></span>
+        </div>
+        <button
+          id="reload"
+          style="margin-left: 77.8%"
+          class="btn btn-outline-info btn-sm"
+        >
+          Clique aqui para recarregar a página
+        </button>
+      </div>
+    </main>
+    <footer
+      class="footer page-footer font-small cyan darken-3"
+      style="position: absolute; bottom: 0; margin: 2%"
+    >
+      <div class="container">
+        <a href="https://github.com/athossampayo">
+          <svg
+            fill="#ffffff"
+            className="octicon octicon-mark-github v-align-middle"
+            height="32"
+            viewBox="0 0 16 16"
+            version="1.1"
+            width="32"
+            aria-hidden="true"
+          >
+            <path
+              fillRule="evenodd"
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+            ></path>
+          </svg>
+        </a>
+        <span class="text-muted">
+          Criado por
+          <a href="https://github.com/athossampayo">Athos Sampayo</a>
+        </span>
+      </div>
+    </footer>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://momentjs.com/downloads/moment.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
