@@ -2,12 +2,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./index.css"/>
     <title>Que horas vou sair?</title>
   </head>
-  <body>
+  <body class="bg-dark text-light">
     <main>
       <form>
-        <div class="container" style="padding-top: 2rem">
+        <div class="container" >
           <h1>Que horas vou sair?</h1>
           <h6>
             &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Calcule a hora de saída exata do
@@ -70,11 +71,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm" style="padding: 2%">
+            <div class="col-sm btn-col" >
               <button
                 onclick=""
                 class="btn btn-primary btn-lg btn-block"
-                style="height: 100%"
               >
                 Calcular
               </button>
@@ -87,28 +87,24 @@
         <div
           class="alert alert-success"
           role="alert"
-          style="text-align: center"
         >
           <span id="saira_as"> Você sairá as: </span>
 
           <span
             id="saida"
-            class="font-weight-bold"
-            style="color: rgb(255, 255, 255)"
+            class="font-weight-bold text-dark"
           ></span>
         </div>
         <button
           id="reload"
-          style="margin-left: 77.8%"
           class="btn btn-outline-info btn-sm"
         >
           Clique aqui para recarregar a página
         </button>
       </div>
-    </main>
+    </main class='bg-dark'>
     <footer
       class="footer page-footer font-small cyan darken-3"
-      style="position: absolute; bottom: 0; margin: 2%"
     >
       <div class="container">
         <a href="https://github.com/athossampayo">

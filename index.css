@@ -1,0 +1,35 @@
+.col input {
+    background-color:#666;
+    color: #FFF;
+    outline: none;
+    border: none;
+}
+.col input:focus{
+    background-color: #666;
+    outline: none;
+    border: solid 1.5px #007bff;
+}
+
+form .container {
+    padding-top: 2rem;
+}
+.btn-col {
+    padding: 2%;
+}
+
+.btn-col button {
+    height: 100%;
+}
+
+.alert {
+    text-align: center;
+}
+
+.btn-outline-info {
+    margin-left: 77.8%;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    margin: 2%;
+}
